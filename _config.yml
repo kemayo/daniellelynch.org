@@ -1,0 +1,17 @@
+url: "http://daniellelynch.org"
+pygments: true
+permalink: /:year/:month/:title/
+markdown: rdiscount
+
+exclude: ["Rakefile", "README.markdown"]
+
+paginate: 10
+pagination_roots: ["/"]
+
+sitename: "Danielle Lynch"
+subtitle: "is not a director"
+
+author: "Danielle Lynch"
+email: "i.am@daniellelynch.org"
+
+tag_dir: "tag"
