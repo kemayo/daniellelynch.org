@@ -27,19 +27,6 @@
 <![endif]-->
 {% if page.stylesheets %}{% for css in page.stylesheets %}<link rel="stylesheet" type="text/css" media="all" href="{{ css }}" />{% endfor %}{% endif %}
 <link rel="alternate" type="application/atom+xml" href="/atom.xml">
-<script type="text/javascript">
-
-var _gaq = _gaq || [];
-_gaq.push(['_setAccount', 'UA-71126-6']);
-_gaq.push(['_trackPageview']);
-
-(function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-})();
-
-</script>
 </head>
 <body class="{{ page.layout }}">
 <div id="page">
@@ -52,7 +39,7 @@ _gaq.push(['_trackPageview']);
             <h1 class="assistive-text section-heading">Main menu</h1>
             <div class="skip-link screen-reader-text"><a href="#content" title="Skip to content">Skip to content</a></div>
             <div class="menu"><ul>
-                <li><a href="/">Home</a></li>
+                <li><a href="/">Me</a></li>
                 <li><a href="http://davidlynch.org" rel="parent">Dad</a></li>
                 <li><a href="http://kellielynch.org" rel="parent">Mum</a></li>
             </ul></div>
@@ -62,4 +49,16 @@ _gaq.push(['_trackPageview']);
         {{ content }}
     </div><!-- main -->
 </div>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-71126-6']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
 </body>
+</html>

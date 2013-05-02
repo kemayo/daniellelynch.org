@@ -2,6 +2,27 @@
 layout: default
 ---
 <div class="about-me">
-<img src="/images/tiger.jpg">
+<div id="sequence">
+    <ul class="sequence-canvas">
+        <li class="animate-in"><div class="pic1"><img src="/images/monster.jpg"></div></li>
+        <li><div class="pic2"><img src="/images/name.jpg"></div></li>
+        <li><div class="pic3"><img src="/images/tiger.jpg"></div></li>
+        <li><div class="pic4"><img src="/images/fedora.jpg"></div></li>
+    </ul>
+</div>
 <p>This page is mostly a placeholder, since I'm only three.</p>
 </div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+<script src="/scripts/jquery.sequence-min.js"></script>
+<script type="text/javascript">
+$(function() {
+    var sequence = $('#sequence').sequence({
+        autoPlay: true
+        ,autoPlayDelay: 1250
+    }).data('sequence');
+    // $('body').click(function() {
+    //     sequence.next();
+    // });
+});
+</script>
